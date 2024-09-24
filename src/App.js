@@ -6,16 +6,17 @@ import './assets/styles/style.css';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import SidePage from './components/SidePage';
 
 function App() {
+
   return (
    <>
    <Header/>
-
    <div className="side">
 
-      <div>
-          this is a side page
+      <div style={{display:"grid"}}>
+          <SidePage/>
       </div>
 
       <div>
@@ -28,9 +29,6 @@ function App() {
     
    </div>
     
-   
-   
-   
    </>
   );
 }

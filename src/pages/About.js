@@ -1,7 +1,7 @@
 import img1 from '../assets/images/1.webp';
 
 export default function About(){
-    return <div className="about" style={{borderLeft:"5px solid blue"}}>
+    return <div className="about" style={{borderLeft:"5px solid #a4dfff3e", marginTop:"10%"}}>
         <div style={{ marginLeft:"10px"}}>
             <p>hello, my name is</p>
             <h1>Mennatallah Ahmed</h1>
