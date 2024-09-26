@@ -2,9 +2,12 @@ import ProjectCard from '../components/ProjectCard';
 import img from '../assets/images/no-image.webp';
 import img1 from '../assets/images/chat1.PNG';
 import noimg from '../assets/images/no-image.webp';
+import { Box } from '@mui/material';
 
 export default function Projects(){
-    return <>
+    return <Box   sx={{
+        display: 'flex', flexDirection: 'column', alignItems: 'center', 
+        justifyContent: 'center', p: 4, mt:4}}>
 
         <ProjectCard isLtoR={true}
                      name="Chat Website"
@@ -60,5 +63,5 @@ CRUD operations.
                     img={noimg}                     
         />
 
-    </>
+    </Box>
 }

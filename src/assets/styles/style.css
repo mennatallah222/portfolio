@@ -3,7 +3,9 @@
 
 * {
   text-decoration: none;
+  font-family: Cairo;
 }
+
 h3,
 h5 {
   font-weight: 100;
@@ -35,7 +37,33 @@ body {
 .side {
   display: grid;
   grid-template-columns: 0.7fr 2fr;
+  margin-top: 2%;
 }
+
+@media (max-width: 1110px) {
+  .side {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sideBar {
+    width: 700px !important;
+    height: 300px !important;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sidePage-second-section {
+    gap: 18px !important;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 830px) {
+}
+
+/* :root {
+  width: fit-content;
+} */
 .about {
   width: 94%;
   display: flex;
@@ -75,6 +103,7 @@ body {
 
 #sideBar {
   display: grid;
+  grid-template-rows: 0.1fr 1fr;
   flex-direction: column;
   align-items: center;
   justify-self: center;
